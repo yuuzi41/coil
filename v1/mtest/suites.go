@@ -14,3 +14,12 @@ var FunctionsSuite = func() {
 var FailuresSuite = func() {
 	Context("pod startup", TestPodStartup)
 }
+
+// BootstrapSuite is a test suite that bootstrap demo environment
+var BootstrapSuite = func() {
+	Context("setup-coil", func() {
+		It("should setup coil", func() {
+			initializeCoil()
+		})
+	})
+}
